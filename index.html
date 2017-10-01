@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- <style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: : 3px #f05f40;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #f05f40;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+ -->
   <head>
 
     <meta charset="utf-8">
@@ -8,7 +37,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Raina Gan's website</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +46,12 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -31,24 +66,23 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services">My Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">My Memory</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
+<!--        <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Pieces</a>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -57,10 +91,10 @@
     <header class="masthead">
       <div class="header-content">
         <div class="header-content-inner">
-          <h1 id="homeHeading">Raina Gan</h1>
+          <h1 id="homeHeading">Stories of mine.</h1>
           <hr>
-          <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          <p>I am a unique speck of dust.</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Read me</a>
         </div>
       </div>
     </header>
@@ -69,11 +103,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
+            <h2 class="section-heading text-white">I'm like you. But I'm not like you.</h2>
             <hr class="light">
-            <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get Started!</a>
-          </div>
+            <p class="text-faded">I live a life of contradictory truths.<br> 
+            I hate bugs, but they seem to love me a lot. I love sand, palms and the sun, but I never wear bikini because I'm afraid of being tanned. I love working out, but what I love more is to eat chips while lying on my bed. <br>
+          I'm rational to what I should do, but I'm emotional to what I desire to do. </p>
+<!--             <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->          </div>
         </div>
       </div>
     </section>
@@ -82,39 +117,35 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
+            <h2 class="section-heading">Hey, I released CO<sub>2</sub> in these places!</h2>
             <hr class="primary">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-              <h3>Sturdy Templates</h3>
+              <!-- <i class="mg map-wrld-as"></i> -->
+              <!-- <div class="tooltip"> -->
+                <h3>Asia</h3>
+                <!-- <span class="tooltiptext">China</span>
               <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+              </div> -->
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-              <h3>Ready to Ship</h3>
-              <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+              <!-- <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i> -->
+              <h3>Europe</h3>
+              <!-- <p class="text-muted">You can use this theme as is, or you can make changes!</p> -->
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-              <h3>Up to Date</h3>
-              <p class="text-muted">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-              <h3>Made with Love</h3>
-              <p class="text-muted">You have to make your websites with love these days!</p>
+              <!-- <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i> -->
+              <h3>North America</h3>
+              <!-- <p class="text-muted">We update dependencies to keep things fresh.</p> -->
             </div>
           </div>
         </div>
@@ -125,90 +156,135 @@
       <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/IMG_2616.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2616.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    August 15, 2015
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Barcelona, Spain
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/IMG_2618.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2618.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    August 19, 2015
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Roma, Italy
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/IMG_2619.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2619.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    August 19, 2015
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Saint Paul's Cathedral, Vantican
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/IMG_2615.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2615.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    August 24, 2015
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Paris, France
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/IMG_2614.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2614.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    June 21, 2016
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Waterloo, Canada
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/IMG_2623.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2623.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    June 24, 2016
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Waterloo, Canada
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/IMG_2620.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2620.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    August 11, 2016
+                  </div>
+                  <div class="project-name">
+                    New York, US
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/IMG_2613.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2613.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    March 15, 2017
+                  </div>
+                  <div class="project-name">
+                    Waterloo, Canada
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/IMG_2617.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2617.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    May 30, 2017
+                  </div>
+                  <div class="project-name">
+                    Waterloo, Canada
                   </div>
                 </div>
               </div>
@@ -218,13 +294,114 @@
       </div>
     </section>
 
-    <div class="call-to-action bg-dark">
-      <div class="container text-center">
-        <h2>Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">And my sweetie, we've spent countless milliseconds together.</h2>
+            <hr class="primary">
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/IMG_2622.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_2622.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    June 19, 2016
+                  </div>
+                  <div class="project-name">
+                    Heizi
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/IMG_0518.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_0518.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    August 19, 2015
+                  </div>
+                  <div class="project-name">
+                    Roma, Italy
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/FullSizeRender.jpg">
+              <img class="img-fluid" src="img/portfolio/FullSizeRender.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    May 23, 2016
+                  </div>
+                  <div class="project-name">
+                    Flowerpot Island, Canada
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/IMG_5979.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_5979.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    May 23, 2016
+                  </div>
+                  <div class="project-name">
+                    Flowerpot Island, Canada
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/IMG_0319.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_0319.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    August 11, 2016
+                  </div>
+                  <div class="project-name">
+                    New York, US
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div> -->
+          <!-- <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/IMG_0621.jpg">
+              <img class="img-fluid" src="img/portfolio/IMG_0621.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    March 3, 2017
+                  </div>
+                  <div class="project-name">
+                    Sanya, China
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </section>
+<!-- 
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -247,7 +424,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->;',l'
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
