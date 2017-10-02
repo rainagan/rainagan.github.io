@@ -12,11 +12,18 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
 
 hr {
-  max-width: 150px;
-  border-width: 150px;
+  max-width: 270px;
+  border-width: 3px;
   border-color: #F05F40; }
 
+hr.hd {
+  max-width: 500px;
+  border-width: 3px;
+  border-color: #F05F40;
+}
+
 hr.light {
+  max-width: 500px;
   border-color: white; }
 
 a {
@@ -27,7 +34,7 @@ a {
   a:focus, a:hover {
     color: #f05f40; }
 
-h1,
+h1 {font-family: 'Just Another Hand', 'Helvetica Neue', Arial, sans-serif; }
 h2,
 h3,
 h4,
@@ -342,3 +349,8 @@ header.masthead {
 
 .btn-xl {
   padding: 15px 30px; }
+
+.portfolio {
+  height: 450px;
+  width: 450px;
+}
