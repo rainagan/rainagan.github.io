@@ -26,6 +26,11 @@ hr.light {
   max-width: 500px;
   border-color: white; }
 
+hr.light_hd {
+  max-width: 285px;
+  border-color: white;
+}
+
 a {
   color: #F05F40;
   -webkit-transition: all 0.2s;
@@ -46,6 +51,33 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px; }
+
+/*.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: : 3px #f05f40;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #f05f40;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}*/
 
 .bg-primary {
   background-color: #F05F40 !important; }
